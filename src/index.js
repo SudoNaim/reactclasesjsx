@@ -4,11 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Contador from "./components/Contador.jsx"
+import DibujosComplejosArray from './components/DibujosComplejosArray.jsx';
+import DibujosComplejosRender from './components/DibujosComplejosRender.jsx';
+import PadreDeporte from './components/PadreDeporte.jsx';
+import PadreNumero from './components/SumaPractica/PadreNumero.jsx';
+import Comics from './components/ComicsEjercicio/Comics.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Contador inicio = "5"/>
-    <Contador inicio = "10"/>
+    <DibujosComplejosArray />
+    <DibujosComplejosRender/>
+    <PadreDeporte></PadreDeporte>
+    <PadreNumero></PadreNumero>
+    <Comics></Comics>
   </React.StrictMode>
 );
 
