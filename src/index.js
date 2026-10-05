@@ -7,7 +7,8 @@ import Contador from "./components/Contador.jsx"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Contador/>
+    <Contador inicio = "5"/>
+    <Contador inicio = "10"/>
   </React.StrictMode>
 );
 

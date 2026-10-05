@@ -10,6 +10,16 @@ class Contador extends Component {
         console.log("Número:"+this.numero);
     }
 
+    state = {
+        valor: parseInt(this.props.inicio)
+    }
+
+    incementarValor = () => {
+        this.setState({
+            valor: this.state.valor + 1
+        })
+    }
+
     //La sitaxis de la llamada a métodos ha cambiado en render
     //Se puede llamar directamente al método onClick (sin lamda y siin parentesís).
     render () {
@@ -18,6 +28,8 @@ class Contador extends Component {
                 <h1>Contador JSX</h1>
                 <p>Número: {this.numero}</p>
                 <button onClick={this.incrementarNumero}>Incrementar</button>
+                <h3>Valor: {this.state.valor}</h3>
+                <button onClick={this.incementarValor}>Incrementar Valor</button>
             </div>
         )
     }
